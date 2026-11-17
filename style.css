@@ -1,0 +1,125 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080d1b;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  padding: 28px 8%;
+  border-bottom: 1px solid #1d293b;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.accueil {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.sous-titre {
+  color: #d7b56d;
+  letter-spacing: 4px;
+  font-size: 11px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 68px);
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.description {
+  color: #aebbd0;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 35px;
+}
+
+.bouton {
+  display: inline-block;
+  background: #ffffff;
+  color: #080d1b;
+  padding: 17px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.bouton span {
+  margin-left: 12px;
+}
+
+.bouton:hover {
+  background: #d7b56d;
+  transform: translateY(-3px);
+}
+
+.bas {
+  color: #718096;
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+.mission {
+  text-align: center;
+  padding: 65px 20px;
+  background: #0c1425;
+}
+
+.mission h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  color: #aebbd0;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #718096;
+  font-size: 11px;
+  border-top: 1px solid #1d293b;
+}
+
+/* Animation */
+main {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+main.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
